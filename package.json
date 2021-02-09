@@ -1,0 +1,33 @@
+{
+  "name": "sql-employee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "mysql db/employees.db < db/schema.sql",
+    "seed": "mysql db/employees.db < db/seeds.sql",
+    "db": "mysql db/employees.db",
+    "watch": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgenesi/SQL-employee-tracker.git"
+  },
+  "author": "Staci Genesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgenesi/SQL-employee-tracker/issues"
+  },
+  "homepage": "https://github.com/sgenesi/SQL-employee-tracker#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7"
+  }
+}
